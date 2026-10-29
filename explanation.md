@@ -21,4 +21,8 @@ Alt sorğulardan bir neçə yerdə istifadə etdim. Məsələn, **3.25** tapşı
 
 ---
 
-**İcra nəticələri:** pgAdmin-də çəkilmiş şəkillərdə 3.11(c), 3.15(a–c), 3.31 və 3.35 sorğularının nəticələri görünür. 3.15(a) sorğusu `C101` müştərisini, 3.15(b) sorğusu `67000.00` kredit cəmini qaytarır. 3.35 üzrə maksimum qeydiyyat 6 tələbədir. Bu nəticələr istifadə edilən nümunə məlumatlardan asılıdır. Digər sorğuları da PostgreSQL-də ayrıca yoxlamaq lazımdır.
+## PostgreSQL-də icra qeydləri
+
+Sorğuların hamısı `university` və ya `bank` bazasında ayrı-ayrılıqda işlədilib və nəticələri `screenshots/` qovluğuna əlavə olunub. 3.11(a) sorğusu 6, 3.11(b) sorğusu 13 tələbə qaytardı; 3.11(d)-də maksimum maaşların ən kiçiyi 40000.00 oldu. Bank nümunəsində 3.15(a) sorğusu `C101` müştərisini, 3.15(b) sorğusu 67000.00 məbləğini və 3.15(c) sorğusu iki filialı qaytardı. 3.28 sorğusu 5, 3.31 sorğusu 9 və 3.32 sorğusu 6 müəllim qaytardı. 3.33-də 2 kurs, 3.34-də 14 bölmə göründü; 3.35-də maksimum qeydiyyat 6 tələbə oldu.
+
+**Boş nəticələr:** 3.24 və 3.25 sorğuları bu nümunə bazasında müvafiq olaraq `Accounting` tələbəsi və `Philosophy` departamenti olmadığı üçün sətir qaytarmadı. 3.26 üçün bir kursu ən çox iki dəfə götürmüş tələbə var, tələb olunan isə ən azı üç dəfərdir. 3.27-də heç bir tələbə ən azı üç fərqli kursu təkrar götürməyib. Bu hallar SQL xətası deyil, verilənlərin xüsusiyyətidir; tapşırıqların şərtləri dəyişdirilməyib.

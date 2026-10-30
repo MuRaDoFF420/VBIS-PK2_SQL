@@ -1,4 +1,4 @@
-# VBIS-Chapter3-SQL
+# VBIS-PK2_SQL
 
 **Ad Soyad:** Əlicabbar Muradov  
 **Qrup:** MRM24  
